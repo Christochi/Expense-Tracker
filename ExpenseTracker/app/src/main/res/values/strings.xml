@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Expense Tracker</string>
+    <string name="category_prompt">Choose a category</string>
+    <string-array name="category_arrays">
+        <item>Business</item>
+        <item>Clothing</item>
+        <item>Drinks</item>
+        <item>Education</item>
+        <item>Grocery</item>
+        <item>Fuel</item>
+        <item>Fun</item>
+        <item>Medical</item>
+        <item>Hotel</item>
+        <item>Loan</item>
+        <item>Movie</item>
+        <item>Pets</item>
+        <item>Other</item>
+        <item>Restaurant</item>
+        <item>Salary</item>
+        <item>Shopping</item>
+        <item>Tips</item>
+        <item>Transport</item>
+    </string-array>
+
+    <string name="payment_prompt">Choose a mode</string>
+    <string-array name="mode_arrays">
+        <item>Cash</item>
+        <item>Credit Card</item>
+        <item>Debit Card</item>
+        <item>Net Banking</item>
+        <item>Cheque</item>
+    </string-array>
+
+    <string name="period_prompt">Choose a period</string>
+    <string-array name="period_arrays">
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+</resources>

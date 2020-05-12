@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background = "#848042"
+    android:orientation = "vertical">
+
+    <RelativeLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_centerHorizontal = "true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wallet_image1"
+            android:layout_marginTop = "48dp"/>
+    </RelativeLayout>
+
+    <!-- Parent of text view linear layout -->
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:orientation = "horizontal"
+        android:layout_marginTop = "16dp">
+
+        <!-- Linear layout of income text view -->
+        <LinearLayout
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:orientation = "vertical"
+            android:layout_marginLeft = "24dp">
+
+            <TextView
+                android:layout_height = "wrap_content"
+                android:layout_width = "wrap_content"
+                android:text = "Income"
+                android:textAppearance = "?android:textAppearanceSmall"
+                android:textColor = "#00FF00"
+                android:textStyle = "bold"
+                android:layout_marginLeft = "16dp"/>
+
+            <TextView
+                android:layout_height = "wrap_content"
+                android:layout_width = "wrap_content"
+                android:text = "  0.00"
+                android:textAppearance = "?android:textAppearanceSmall"
+                android:textColor = "#00FF00"
+                android:textStyle = "bold"
+                android:layout_marginLeft = "16dp"/>
+        </LinearLayout>
+
+        <!-- Linear layout of expense text view -->
+        <LinearLayout
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:orientation = "vertical"
+            android:layout_marginLeft = "24dp"
+            android:layout_marginRight = "-24dp">
+
+            <TextView
+                android:layout_height = "wrap_content"
+                android:layout_width = "wrap_content"
+                android:text = "Expense"
+                android:textAppearance = "?android:textAppearanceSmall"
+                android:textColor = "#FF0000"
+                android:textStyle = "bold" />
+
+            <TextView
+                android:layout_height = "wrap_content"
+                android:layout_width = "wrap_content"
+                android:text = "  0.00"
+                android:textAppearance = "?android:textAppearanceSmall"
+                android:textColor = "#FF0000"
+                android:textStyle = "bold" />
+        </LinearLayout>
+
+        <!-- Linear layout of balance text view -->
+        <LinearLayout
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:orientation = "vertical"
+            android:layout_marginBottom = "16dp"
+            android:layout_marginLeft = "24dp"
+            android:layout_marginRight = "-32dp">
+
+            <TextView
+                android:layout_height = "wrap_content"
+                android:layout_width = "wrap_content"
+                android:text = "Balance"
+                android:textAppearance = "?android:textAppearanceSmall"
+                android:textColor = "#0000FF"
+                android:textStyle = "bold" />
+
+            <TextView
+                android:layout_height = "wrap_content"
+                android:layout_width = "wrap_content"
+                android:text = "  0.00"
+                android:textAppearance = "?android:textAppearanceSmall"
+                android:textColor = "#0000FF"
+                android:textStyle = "bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- linear layout for buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation = "vertical" >
+
+        <!-- enter expense button -->
+        <Button
+            android:layout_width = "match_parent"
+            android:layout_height = "0dp"
+            android:layout_weight = "1"
+            android:text = "Expense"
+            android:textStyle = "bold"
+            android:textAllCaps = "true"
+            android:layout_marginLeft = "16dp"
+            android:layout_marginRight = "16dp"
+            android:layout_marginTop = "8dp"
+            android:background = "#FFFFFF"
+            android:paddingLeft = "8dp"
+            android:paddingRight = "126dp"
+            android:drawableLeft = "@drawable/wallet"
+            android:textAppearance = "?android:textAppearanceLarge"
+            android:onClick = "expensePage"/>
+
+        <!-- store income button -->
+        <Button
+            android:layout_width = "match_parent"
+            android:layout_height = "0dp"
+            android:layout_weight = "1"
+            android:text = "store income"
+            android:textStyle = "bold"
+            android:textAllCaps = "true"
+            android:layout_marginLeft = "16dp"
+            android:layout_marginRight = "16dp"
+            android:layout_marginTop = "8dp"
+            android:textAppearance = "?android:textAppearanceLarge"
+            android:drawableLeft = "@drawable/income1"
+            android:background = "@android:color/holo_orange_light"
+            android:paddingRight = "56dp"
+            android:onClick = "incomePage"/>
+
+        <!-- display spending history button -->
+        <Button
+            android:layout_width = "match_parent"
+            android:layout_height = "0dp"
+            android:layout_weight = "1"
+            android:text = "history"
+            android:textStyle = "bold"
+            android:textAllCaps = "true"
+            android:layout_marginLeft = "16dp"
+            android:layout_marginRight = "16dp"
+            android:layout_marginTop = "8dp"
+            android:textAppearance = "?android:textAppearanceLarge"
+            android:paddingRight = "112dp"
+            android:drawableLeft = "@drawable/history"
+            android:background = "@android:color/holo_blue_bright"
+            android:onClick = "historyPage"/>
+
+        <!-- chart button -->
+        <Button
+            android:layout_width = "match_parent"
+            android:layout_height = "0dp"
+            android:layout_weight = "1"
+            android:text = "chart"
+            android:textStyle = "bold"
+            android:textAllCaps = "true"
+            android:layout_marginLeft = "16dp"
+            android:layout_marginRight = "16dp"
+            android:layout_marginTop = "8dp"
+            android:layout_marginBottom = "64dp"
+            android:paddingLeft = "-8dp"
+            android:drawableLeft = "@drawable/graph"
+            android:textAppearance = "?android:textAppearanceLarge"
+            android:paddingRight = "157dp"
+            android:background = "@android:color/holo_red_light"
+            android:onClick = "chartPage"/>
+
+    </LinearLayout>
+
+</LinearLayout>
