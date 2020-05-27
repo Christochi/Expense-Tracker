@@ -8,3 +8,4 @@ Functionality:
 - user can view expenses made monthly/yearly in a chart
 - user can view expense history
 
+To see the app images: open app images folder
